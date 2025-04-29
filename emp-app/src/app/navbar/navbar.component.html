@@ -1,1 +1,18 @@
-<p>navbar works!</p>
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page">User</a>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" [routerLink]="['/add-employee']" routerLinkActtive="router-link-active" >Add Employee</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" [routerLink]="['/view-all-employee']">View All Employee</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link disabled" aria-disabled="true">Department</button>
+    </li>
+    <li class="nav justify-content-end">
+      <button class="nav-link disabled" aria-disabled="true">SignIn</button>
+    </li>
+  
+  </ul>
