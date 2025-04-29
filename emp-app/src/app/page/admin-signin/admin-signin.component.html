@@ -1,1 +1,83 @@
-<p>admin-signin works!</p>
+<div class="container mt-5">
+    <div class="card bg-secondary shadow-lg">
+
+        <div class="card-header text-center text-dark bg-warning">
+            <h3 class="mt-2">User Sign Up</h3>
+        </div>
+
+        <div class="card-body bg-light">
+
+            <form action="http://localhost:8081/emp-controller/admin-signin" method="POST">
+
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <label class="form-label">First Name</label>
+                        <input class="text" name="fname" class="form-control" placeholder="Enter First Name" />
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label">Last Name</label>
+                        <input class="text" name="lname" class="form-control" placeholder="Enter Last Name" />
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label class="form-label">Gender</label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="Male"/>
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="Male"/>
+                            <label class="form-check-label" for="male">Female</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <label class="form-label">Mobile Number</label>
+                        <input type="text" name="Mobile" class="form-control" placeholder="Enter Mobile Number"/>                        
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <label class="form-label">City</label>
+                        <select name="City" class="form-select">
+                            <option value="">Select City</option>
+                            <option value="Colombo">Colombo</option>
+                            <option value="Gampaha">Gampaha</option>
+                            <option value="Kandy">Kandy</option>
+                            <option value="Anuradhapura">Anuradhapura</option>
+                            <option value="Mathara">Mathara</option>
+                            <option value="Bandarawela">Bandarawela</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <label class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" placeholder="Enter Email"/>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <label class="form-label">Password</label>
+                        <input type="password" name="password" class="form-control" placeholder="Enter password"/>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-success">Sign Up</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</div>

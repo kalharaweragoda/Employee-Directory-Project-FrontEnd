@@ -1,1 +1,38 @@
-<p>manage-emp works!</p>
+<div class="container m-5">
+
+    <h1 class="text-center mb-4 bg-info p-4 text-white fw-bolder">Add Employee</h1>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Name" aria-label="Username" [(ngModel)]="employeeObj.Name"
+            aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Email" [(ngModel)]="employeeObj.Email" aria-label="Username"
+            aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Department" [(ngModel)]="employeeObj.Department" aria-label="Recipient's username" 
+            aria-describedby="basic-addon2">
+        <span class="input-group-text" id="basic-addon2">.com</span>
+    </div>
+
+    <div class="input-group mb-3">
+        <select class="form-select" aria-label="Default select example" id="Department" [(ngModel)]="employeeObj.Department">
+            <option selected disabled>Role</option>
+            <option value="admin">HR</option>
+            <option value="manager">IT</option>
+            <option value="hr">HR</option>
+            <option value="developer">Fiance</option>
+            <option value="designer">Operations</option>
+        </select>
+    </div>
+
+    <br>
+
+    <button type="button" class="btn btn-success" (click)="addEmployee()">Add Employee</button>
+
+</div>
